@@ -85,13 +85,21 @@ namespace Manager
             {
                 Print(vazifa);
             }
-            Console.WriteLine("yana o'zgartirish kiritishni xoxlaysizmi?");
-            if(test=="yo'q")
+            Console.WriteLine("vazifalarning bajarilgan qismini belgilang tartib raqamini.");
+            int bajarilganv = Convert.ToInt32(Console.ReadLine());
+           switch(bajarilganv)
             {
-                Console.WriteLine("Siz kiritgan vazifalar"); Print(vazifa);
-              
+                case 1:
+                   
+                    Console.WriteLine("1-Vazifa bajarildi");
+                    break;
+                case 2:
+                    Console.WriteLine("2-Vazifa bajarildi");
+                    break;
+                case 3:
+                    Console.WriteLine("3-Vazifa bajarildi");
+                    break;
             }
-            goto analysis;
         }
         public static void Print(List<string> list)
         {
